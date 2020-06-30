@@ -9,5 +9,11 @@ export default createGlobalStyle`
   }
   body {
   background: #f0f0f5;
+  -webkit-font-smoothing: antialiased;
+  }
+
+  body, input, button {
+    font: 16px Roboto, sans-serif;
+
   }
 `;
