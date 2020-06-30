@@ -4,16 +4,14 @@ import { StatusBar } from 'react-native';
 
 import Routes from './routes';
 
-export default function App() {
+import GlobalStyle from './styles/global';
 
-    return (
-        <>
-            <StatusBar
-                barStyle="dark-content"
-                backgroundColor="transparent"
-                translucent/>
-            <Routes/>
-        </>
+const App: React.FC = () => (
+    <>
+        <StatusBar barStyle="dark-content" backgroundColor="transparent" translucent />
+        <Routes />
+        <GlobalStyle />
+    </>
+);
 
-    );
-}
+export default App;
